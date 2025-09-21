@@ -39,20 +39,20 @@
 
    <div id="header">
     <div class="header-cont">
-   <nav>
-     <img src="assets/img/logo.png" class="logo"  alt="website logo" >
+   <nav role="navigation" aria-label="Main navigation">
+     <img src="assets/img/logo.png" class="logo" alt="Shujaacode Enterprise Logo">
   
      <ul id="sidemenu" class="navmenu">
-       <li><a href="" onclick="scrollToSection(event, '#about-for-navigation')">About</a></li>
-       <li><a href="" onclick="scrollToSection(event, '#services')">Services</a></li>
-       <li><a href="" onclick="scrollToSection(event, '#why-us')">Why Us</a></li>
-       <li><a href="" onclick="scrollToSection(event, '#contact')">Contact</a></li>
-       <li><a href="" onclick="scrollToSection(event, '#follow-us')">Follow</a></li>
+       <li><a href="#about-for-navigation" onclick="scrollToSection(event, '#about-for-navigation')">About</a></li>
+       <li><a href="#services" onclick="scrollToSection(event, '#services')">Services</a></li>
+       <li><a href="#why-us" onclick="scrollToSection(event, '#why-us')">Why Us</a></li>
+       <li><a href="#contact" onclick="scrollToSection(event, '#contact')">Contact</a></li>
+       <li><a href="#follow-us" onclick="scrollToSection(event, '#follow-us')">Follow</a></li>
        
-       <i class="fas fa-times"  onclick="closemenu()"></i>
+       <i class="fas fa-times" onclick="closemenu()" aria-hidden="true"></i>
      </ul> 
 
-     <i class="fas fa-bars" onclick="openmenu()"></i>
+     <i class="fas fa-bars" onclick="openmenu()" aria-label="Open navigation menu" role="button" tabindex="0"></i>
    </nav>
     </div>
  </div>
