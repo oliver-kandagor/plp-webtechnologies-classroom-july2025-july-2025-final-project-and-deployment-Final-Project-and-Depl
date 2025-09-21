@@ -1,21 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shujaacode Enterprise</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Shujaacode Enterprise</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-    <!--link style css-->
-    <link rel="stylesheet" href="css/style.css">
-    
+  <!-- Favicons -->
+  <link href="assets/img/icon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="manifest" href="manifest.json">
 
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- font awesome icons -->
+  <script src="https://kit.fontawesome.com/054d6d8133.js" crossorigin="anonymous"></script>
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
 </head>
-<body>
+
+<body class="index-page">
+
+
+  <div id="content">
+
+
+   <div id="header">
+    <div class="header-cont">
+   <nav>
+     <img src="assets/img/logo.png" class="logo"  alt="website logo" >
+  
+     <ul id="sidemenu" class="navmenu">
+       <li><a href="" onclick="scrollToSection(event, '#about-for-navigation')">About</a></li>
+       <li><a href="" onclick="scrollToSection(event, '#services')">Services</a></li>
+       <li><a href="" onclick="scrollToSection(event, '#why-us')">Why Us</a></li>
+       <li><a href="" onclick="scrollToSection(event, '#contact')">Contact</a></li>
+       <li><a href="" onclick="scrollToSection(event, '#follow-us')">Follow</a></li>
+       
+       <i class="fas fa-times"  onclick="closemenu()"></i>
+     </ul> 
+
+     <i class="fas fa-bars" onclick="openmenu()"></i>
+   </nav>
+    </div>
+ </div>
+
+  <main class="main">
+    <!-- Hero Section -->
+
+
+    <section id="hero" class="hero section">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-7 order-lg-last hero-img">
+            <img src="assets/img/design.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <h1>welcome to <br> Shujaacode Enterprise <br> company </h1>
+            <p><span>We create website for companys</span></p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- /Hero Section -->
+
+  </div>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div id="about-for-navigation" class="container" data-aos="fade-up">
+
+        <div  class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-5 about-cont-1">
+            <div class="about-img">
+              <img src="assets/img/ceo2.png" class="img-fluid" alt="">
+            </div>
+            <h1 >Oliver Kandagor </h1>
+              <p>Founder and CEO</p>
+          </div>
+
+          <div class="col-lg-7 about-cont-2">
+            <h1 class="pt-0 pt-lg-5" style="text-align: center;">About Us</h1>
+            <p class="pt-0 pt-lg-5">At Shujaacode Enterprise, we specialize in creating high-quality websites for businesses of all sizes. Our team of experienced developers and designers work closely with clients to deliver customized solutions that meet their unique needs.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h1>Services</h1>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <!-- you can use bootstrap icons as described below -->
+          <!-- <i class="bi bi-house-door"></i> -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item item-cyan position-relative">
+                <div class="icon">
+                  <i class="fas fa-server"></i>
+                </div>
+                <h3>Web Hosting &amp; Domain Services</h3>
+                <p>Shujaacode provides reliable web hosting solutions in Kenya (ShujaaHost) including:</p>
+                <ul>
+                  <li>Free website transfers for sites under 100 MB</li>
+                  <li>Free SSL certificates for secure browsing</li>
+                  <li>Unlimited email accounts</li>
+                  <li>Instant account setup and real-time monitoring</li>
+                  <li>Free drag-and-drop website builder</li>
+                </ul>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item item-orange position-relative">
+                <div class="icon">
+                  <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>Web Design &amp; Development</h3>
+                <p>Mobile-friendly, SEO-optimized websites with clean design and fast load times. Focused on great UX and affordable, high-quality web design services in Kenya.</p>
+                <p class="small">Brand: ShujaaHost</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item item-teal position-relative">
+                <div class="icon">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <h3>ERP &amp; IT Solutions</h3>
+                <p>Shujaa Data Systems delivers intelligent ERP and IT solutions (Odoo-based):</p>
+                <ul>
+                  <li>Full Odoo implementations</li>
+                  <li>Custom web &amp; mobile application development</li>
+                  <li>24/7 AI-powered WhatsApp agents for customer engagement</li>
+                  <li>UI/UX design, backend development, and API integration</li>
+                </ul>
+                <p class="small">Brand: Shujaa Data Systems</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-item item-red position-relative">
+                <div class="icon">
+                  <i class="fas fa-cloud"></i>
+                </div>
+                <h3>Salesforce Consulting</h3>
+                <p>Shujaa Consulting provides global Salesforce consulting, implementation and managed services with expertise in:</p>
+                <ul>
+                  <li>Nonprofit Cloud, Sales Cloud, Service Cloud, Experience Cloud</li>
+                  <li>Project implementation and ongoing managed services</li>
+                  <li>Support for international NGOs and social enterprises</li>
+                  <li>AppExchange solutions and integrations</li>
+                </ul>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="service-item item-indigo position-relative">
+                <div class="icon">
+                  <i class="fas fa-bullhorn"></i>
+                </div>
+                <h3>Digital Marketing &amp; Branding</h3>
+                <p>Shujaa Group offers digital marketing and branding services including public relations, graphics design, content development, events management and broader IT &amp; financial systems management.</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+              <div class="service-item item-yellow position-relative">
+                <div class="icon">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Cybersecurity Services</h3>
+                <p>Shujaa Cybersec provides comprehensive cybersecurity services including vulnerability assessments, penetration testing, security audits, and incident response to protect your business from cyber threats.</p>
+              </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+
+    <!-- Why Us? Section -->
+    <section id="why-us" class="whyus section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="whyus">
+            <h1>Why Choose Shujaacode Enterprise?</h1>
+
+            <div class="d-flex align-items-start mt-1">
+              <i class="bi bi-bullet"></i>
+              <p>Comprehensive services across hosting, domains, web design, ERP & IT, Salesforce consulting, digital marketing and cybersecurity.</p>
+            </div>
+
+            <div class="d-flex align-items-start mt-1">
+              <i class="bi bi-bullet"></i>
+              <p>Local expertise with global standards — fast deployments, reliable support, and solutions tailored for Kenyan businesses.</p>
+            </div>
+
+            <div class="d-flex align-items-start mt-1">
+              <i class="bi bi-bullet"></i>
+              <p>Recognised brands within our group: ShujaaHost (hosting), Shujaa Data Systems (ERP & IT), and Shujaa Consulting (Salesforce).</p>
+            </div>
+
+            <div class="d-flex align-items-start mt-1">
+              <i class="bi bi-bullet"></i>
+              <p>Security-first approach: free SSL, continuous monitoring, vulnerability assessments, penetration testing and incident response.</p>
+            </div>
+
+            <div class="d-flex align-items-start mt-1">
+              <i class="bi bi-bullet"></i>
+              <p>Mobile-first, SEO-optimized websites with clean design and fast load times to boost user experience and conversions.</p>
+            </div>
+
+            <div class="d-flex align-items-start mt-1">
+              <i class="bi bi-bullet"></i>
+              <p>End-to-end support including onboarding, 24/7 AI-powered WhatsApp agents, and ongoing managed services for peace of mind.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us? Section -->
+
     
 
 
-<!--Link script-->
-<link rel="script" href="JS/script.JS">
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div  class="container section-title" data-aos="fade-up">
+        <h1>Contact</h1>
+        <p>Leave here a message and our team will respond you as soon as possible</p>
+      </div><!-- End Section Title -->
+
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-item d-flex mt-md-5 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <a class="redirection" href="tel:0757574057">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              </a>
+              <div>
+                <h3>Call Us</h3>
+                <a class="redirection" href="tel:0757574057">
+                <p>0757574057</p>
+                </a>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex mb-4" data-aos="fade-up" data-aos-delay="400">
+              <a class="redirection" href="mailto:shujaacode@gmail.com">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              </a>
+              <div>
+              <h3>Email Us</h3>
+              <a class="redirection" href="mailto:shujaacode@gmail.com">
+              <p>Shujaacode@gmail.com</p>
+              </a>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-7">
+            <form  name="submit-to-google-sheet" class="contact-form" data-aos="fade-up" data-aos-delay="500">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="telephone" class="form-control" name="phone" placeholder="Phone No" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <button type="submit">Send Message</button>
+                  <div class="cont-msg">
+                    <span id="msg"></span>
+                    </div>
+                  </div>
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+   </section><!-- /Contact Section -->
+
+</main>
+
+<footer id="footer" class="footer">
+
+  <div class="container">
+    <div class="row gy-3">
+      <div class="col-lg-3 col-md-6 d-flex">
+        <a class="redirection" href="https://goo.gl/maps/your-company-location">
+          <i class="bi bi-geo-alt icon"></i>
+        </a>
+        <div class="address">
+          <h4>Address</h4>
+          <a class="redirection" href="https://goo.gl/maps/your-company-location">
+            <p>ShujaaCode Enterprise,</p>
+            <p>Kabarnet, Baringo, Kenya</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex">
+        <i class="bi bi-clock icon"></i>
+        <div class="opening-hours">
+          <h4>Opening Hours</h4>
+          <p>
+            <strong>Mon-Sat: </strong>8AM - 6PM
+            <br>
+            <strong>Sun</strong>: Closed
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex">
+        <i class="bi bi-telephone icon"></i>
+        <div class="contact-us">
+          <h4>Contact Us</h4>
+          <div class="social-links d-flex">
+            <a class="redirection" href="tel:+25475754057">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+            </a>
+            <a class="redirection" href="https://wa.me/25475754057">
+              <i class="bi bi-whatsapp flex-shrink-0"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6 d-flex">
+        <i class="bi bi-people icon"></i>
+        <div class="follow-us" id="follow-us">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="https://www.facebook.com/kandagoroliver" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.tiktok.com/@_k.a.n.d.a" class="tiktok"><i class="bi bi-tiktok"></i></a>
+            <a href="https://www.instagram.com/_k.a.n.d.a/" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@ShujaaCode" class="youtube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p>© 2025 ShujaaCode Enterprise | All Rights Reserved</p>
+  </div>
+
+</footer>
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Preloader -->
+<div id="preloader">
+  <!-- Main loader container -->
+  <div class="loader-content">
+    <!-- Spinning circle loader -->
+    <div class="spinner"></div>
+  </div>
+  
+  <!-- Text container positioned at the bottom -->
+  <div class="text-container">
+    <!-- First line: Project title -->
+    <div class="text-line-1">PLP Web Developer Final Project</div>
+    <!-- Second line: Thanks message -->
+    <div class="text-line-2">Thanks PLP Academy</div>
+  </div>
+</div>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    AOS.init();
+  });
+</script>
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+
 </body>
 </html>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwX4Y8mX4bX2bYk3bF7c1Z6JH9z5G5H6J7K8L9M0N1O2P3Q4R5S6T7U8V9W0X1Y2Z3/exec'
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent successfully";
+          setTimeout(function() {
+            msg.innerHTML = "";
+          }, 5000);
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    });
+  </script>
+  <script>
+    function openmenu(){
+      document.getElementById("sidemenu").style.right="0";
+    }
+    function closemenu(){
+      document.getElementById("sidemenu").style.right="-200px";
+    }
+
+    function scrollToSection(event, sectionId) {
+      event.preventDefault();
+      const section = document.querySelector(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+        closemenu(); // Close the menu after clicking a link
+      }
+    }
+  </script>
